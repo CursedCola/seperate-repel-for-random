@@ -1,8 +1,7 @@
-def random():
+from random import randint
   # random
   # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
   #show you two useful functions for now.
-  print("random")
   # from random import shuffle
   # # This shuffles the list "in-place" meaning it won't return
   # # anything, instead it will effect the list passed
