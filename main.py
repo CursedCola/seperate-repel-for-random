@@ -2,6 +2,29 @@ from random import randint
   # random
   # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
   #show you two useful functions for now.
+# first_random = randint(1, 50)
+# print(first_random)
+
+dice1 = randint(1,6)
+dice2 = randint(1,6)
+dice3 = randint(1,6)
+dice4 = randint(1,6)
+dice5 = randint(1,6)
+
+my_gamble = dice1 + dice2 + dice3 + dice4 + dice5
+
+if my_gamble == 0:
+  print("Roll again")
+elif my_gamble % 2 == 1:
+  print("you almost won")
+elif my_gamble >= 12 and my_gamble <= 18:
+  print("you lost")
+else:
+  print("you win")
+
+
+print(my_gamble)
+
   # from random import shuffle
   # # This shuffles the list "in-place" meaning it won't return
   # # anything, instead it will effect the list passed
